@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page Example</title>
+
+    <!-- font -->
+    
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat';
+
+        }
+        .navbar{
+            width: 100vw;
+            height: 10vh;
+            background: #c7e7f7;
+            display: flex;
+        }
+        .navbar-brand{
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar-item{
+            width: 60%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 500;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li{
+            display: inline;
+            margin: 10px;
+        }
+        li a{
+            text-decoration: none;
+            color: #040404;
+        }
+        .home-item{
+            padding: 10px 20px;
+            background-color: #0088cc;
+            border-radius: 1000px;
+            color: #ffffff;
+        }
+        /* bagian hero */
+        .hero{
+            width: 100vw;
+            height: 90vh;
+            background: #c7e7f7;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .area-title{
+            width: 30%;
+            padding: 100px;
+        }
+        .text-title{
+            font-size: 3em;
+            font-weight: bold;
+        }
+        .text-tagline{
+            font-size: 1.5em;
+            margin-top: 30px;
+        }
+        .button-explore{
+            margin-top: 50px;
+        }
+        .btn-explore{
+            background-color: #0088cc;
+            padding: 10px 30px;
+            border-radius: 1000px;
+            color: #ffffff;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .area-image{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img-brand img{
+            width: 400px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-brand">
+            <h3>Tokopaedi</h3>
+        </div>
+        <div class="navbar-item">
+            <div class="list-item">
+                <ul>
+                    <li><a class="home-item" href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="area-title">
+            <div class="text-title">
+                <p>Website <br> Pertama <br> Saya</p>
+            </div>
+            <div class="text-tagline">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus aliquid facere quis quasi a modi tenetur ad sequi culpa nostrum!</p>
+            </div>
+            <div class="button-explore">
+                <a href="#" class="btn-explore">Let's Explore</a>
+            </div>
+        </div>
+        <div class="area-image">
+            <div class="img-brand">
+                <img src="fn.png">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

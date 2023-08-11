@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .panel{
+            width: 30%;
+            height: 60%;
+            display: flex;
+            justify-content: center;
+        }
+        fieldset{
+            width: 100%;
+            background: #ffffff;
+            padding: 20px;
+            border: #ffff;
+            box-shadow: 5px 5px 30px #888888b4;
+            border-radius: 20px;
+        }
+        legend{
+            padding: 20px 30px;
+            background-color: #0088cc;
+            color: #ffff;
+            border-radius: 100px;
+            text-align: center;
+        }
+        input, button{
+            width: 95%;
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .tombol{
+            background: #0088cc;
+            border: none;
+            color: #ffff;
+            border-radius: 8px;
+            transition: .4s;
+        }
+        .tombol:hover{
+            background: #016ca2;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="panel">
+            <fieldset>
+                <legend>Simple Login</legend>
+                <form action="#" method="post">
+                    <input type="text" required placeholder="Masukan Nama Depan">
+                    <input type="text" required placeholder="Masukan Nama Belakang">
+                    <input type="text" required placeholder="Masukan Email">
+                    <input type="password" required placeholder="Masukan Password">
+                    <input type="submit" class="tombol" value="Ayo masuk!">
+                </form>
+            </fieldset>
+        </div>
+    </div>
+</body>
+</html>

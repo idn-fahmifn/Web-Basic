@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form Login</title>
+
+    <!-- ini adalah css -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: #0088cc;  
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 30%;
+            background: #ffffff;
+            border-radius: 16px;
+        }
+        form{
+            width: 100%;
+            padding: 20px;
+        }
+        input{
+            width: 85%;
+            padding: 10px;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+      
+    </style>
+    <!-- batas akhir css -->
+
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <form action="ustadz.html" method="post">
+                <input type="text" required placeholder="Masukan Nama Anda">
+                <input type="text" required placeholder="Masukan Username">
+                <input type="email" required placeholder="Masukan Alamat Email">
+                <input type="password" required placeholder="Password">
+                <input type="submit" value="Let's Join">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
