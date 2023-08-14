@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        .container{
-            width: 100vw;
-            height: 100vh;
-            background: #0088cc;
-            display: grid;
-            grid-template-columns: auto auto auto;
+
+        .container {
+            display: flex;
         }
-        .card{
-            background-color: #ffff;
+
+        .column {
+            flex-wrap: wrap;
+            flex: auto;
             padding: 20px;
-            margin: 20px;
+            border: 1px solid #ddd;
+            margin: 10px;
+            background-color: #f7f7f7;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <div class="card">Card 1</div>
-        <div class="card">Card 1</div>
-        <div class="card">Card 1</div>
-        <div class="card">Card 1</div>
-        <div class="card">Card 1</div>
+        <div class="column">
+            <h2>Kolom 1</h2>
+            <p>Isi kolom pertama...</p>
+        </div>
+        <div class="column">
+            <h2>Kolom 2</h2>
+            <p>Isi kolom kedua...</p>
+        </div>
+        <div class="column">
+            <h2>Kolom 3</h2>
+            <p>Isi kolom ketiga...</p>
+        </div>
+        
     </div>
+
 </body>
+
 </html>
