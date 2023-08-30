@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Ball</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background: #00ff00;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ball{
+            width: 100px;
+            height: 100px;
+            background: #ff0000;
+            border-radius: 1000px;
+            animation: bounce 0.5s infinite alternate;
+        }
+
+        @keyframes bounce {
+            from{
+                transform: translateY(0) scaleX(1.8);
+            }
+            to{
+                transform: translateY(-200px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div> 
+    </div>
+</body>
+</html>

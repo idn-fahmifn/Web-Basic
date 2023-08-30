@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .card{
+            background: #ffffff;
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+
+        <h4 id="judul">Disini Adalah Judul</h4>
+        <p id="paragrap">Disini adalah Paragrap</p>
+
+    </div>
+
+    
+
+    <script>
+        // console.log untuk menampilkan sebuah data, tapi tidak di tampilkan di halaman website, melainkan harus membuka inspect element
+        console.log("Saya Sedang Belajar JS"); 
+
+
+        // document.write untuk menampilkan sebuah data dan di tampilkan di halaman website, rapi tidak bisa membuat style seperti html
+        // document.write('Saya Sedang Belajar javaScript');
+
+    
+
+
+        // document.getElementById('judul').innerHTML = 'Hari Ini';
+        // document.getElementById('paragrap').innerHTML = bulan;
+
+
+       const today = new Date();
+       const tanggal = today.getDate();
+       const bulan = today.getMonth()+1;
+       const tahun = today.getFullYear();
+
+       console.log(tanggal+'-'+bulan+'-'+tahun)
+
+        // window.alert('Saya Sedang Belajar JavaScript');
+
+        // window.alert(Date());
+
+    </script>
+</body>
+
+</html>

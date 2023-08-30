@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Navbar</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden !important;
+        }
+
+        /* Navbar Area */
+
+        .navbar {
+            width: 100vw;
+            background: #ffffff;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: 'Poppins';
+            padding: 20px 0;
+            box-shadow: #00000020 1px 1px 30px;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #040404;
+        }
+
+        .logo img {
+            width: 50px;
+            margin-right: 20px;
+        }
+        .nav-item{
+            height: 100%;
+        }
+
+        .nav-link {
+            display: inline;
+        }
+
+        .nav-link a {
+            text-decoration: none;
+            color: #040404;
+            margin-left: 20px;
+        }
+
+        .toggle {
+            display: none;
+        }
+
+        .toggle a i {
+            color: #040404;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 80px;
+            padding: 30px;
+            background: #ffffff;
+            box-sizing: border-box;
+            transition: 3s;
+        }
+
+        .dropdown-content li a {
+            text-decoration: none;
+            color: #040404;
+        }
+
+        .dropdown-content li {
+            list-style: none;
+        }
+
+        .toggle:hover .dropdown-content {
+            display: block;
+        }
+
+        @media screen and (max-width:767px) {
+            .toggle {
+                display: block;
+            }
+
+            .nav-item {
+                display: none;
+            }
+        }
+
+        /* End Navbar Area */
+
+
+        /* Hero Area */
+
+        .hero {
+            width: 100vw;
+            height: 80vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .title-area {
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+
+        .text-title {
+            /* margin: 30px 0; */
+        }
+
+        .text-title p {
+            font-size: 4.1rem;
+            font-weight: bold;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .text-title p span {
+            color: #0088cc;
+        }
+
+        .text-tagline p {
+            font-family: 'Poppins';
+            letter-spacing: 3px;
+            margin: 20px 0;
+        }
+
+        .text-tagline p span{
+            color: #0088cc;
+        }
+
+        .button-hero{
+            width: 100%;
+            padding: 20px 0;
+            font-family: 'Poppins';
+            display: flex;
+        }
+
+        .btn-hire {
+            padding: 10px 30px;
+            background: #0088cc;
+            border-radius: 1000px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .btn-cv {
+            padding: 10px 30px;
+            border: #0088cc 1px solid;
+            border-radius: 1000px;
+            color: #0088cc;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        /* End Hero */
+
+        /* card-brands */
+
+        .brand-area{
+            width: 100%;
+            height: 200px;
+            position: absolute;
+            /* background: #0088cc; */
+            top: 80%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .card-brand{
+            width: 300px;
+            height: 100px;
+            display: flex;
+            background: #ffffff;
+            box-shadow: 2px 2px 30px #00000020;
+            border-radius: 8px;
+        }
+
+        /* end card-brands */
+
+        /* About */
+        .about{
+            width: 100vw;
+            height: 100vh;
+            background: #f8f8f8;
+        }
+
+        /* End About */
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="fn-logo.png" alt="Logo FN">
+            <h3>Fahmi FN</h3>
+        </div>
+        
+        <div class="nav-item">
+            <ul>
+                <li class="nav-link"><a href="">Home</a></li>
+                <li class="nav-link"><a href="">About</a></li>
+                <li class="nav-link"><a href="">Experience</a></li>
+                <li class="nav-link"><a href="">Contact me</a></li>
+            </ul>
+        </div>
+        <div class="toggle">
+            <a href="#">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul class="dropdown-content">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="title-area">
+            <div class="text-title">
+                <p>Hallo, <br> I'm <span>Fahmi Nuradi</span>
+            </div>
+            <div class="text-tagline">
+                <p><span>I am a </span>Web Developer - Teacher - Mentor</p>
+            </div>
+            <div class="button-hero">
+                <a href="#" class="btn-hire">Hire Me</a>
+                <a href="#" class="btn-cv">Download CV</a>
+            </div>
+        </div>
+        <div class="image-area">
+        </div>
+    </div>
+    <div class="about">
+        <div class="desc-area">
+
+        </div>
+        <div class="detail-desc">
+
+        </div>
+    </div>
+</body>
+
+</html>
